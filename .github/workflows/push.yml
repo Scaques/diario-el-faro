@@ -5,8 +5,7 @@ push:
     main
 jobs:
   deploy-page:
-  runs-on: ubuntu-latest
-  steps:
+   steps:
     name: Checkout
     uses: actions/checkout@v2.3.1
 
