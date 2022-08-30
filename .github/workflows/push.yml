@@ -5,14 +5,13 @@ push:
     main
 jobs:
   deploy-page:
-  runs-on: ubuntu
-  steps:
-    name: Checkout
-    uses: actions/checkout@v2.3.1
+   runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
 
-    name: Deploy
-    uses: JamesIves/github-pages-deploy-action@4.1.4
-    with:
-      branch: gh-pages
-      folder: .
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: .
 
